@@ -13,10 +13,13 @@
 ## Cronograma
 
 - 14/10/2021 - Kickoff do Projeto
+<ul>
 <li> Termo de Abertura </li>
 <li> Slide da apresentação </li>
 <li> Definição da Metodologia </li>
 <li> Trello </li>
+  
+ </ul>
 - 04/11/2021 - 1º Status Report
 - 02/12/2021 - 2º Status Report
 - 21/12/2021 - Entrega Final

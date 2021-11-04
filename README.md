@@ -18,6 +18,10 @@
   - Definição da Metodologia
   - Trello 
 - 04/11/2021 - 1º Status Report
+  - Declaração de Escopo
+  - Modelagem AS-IS
+  - Plano de comunicação
+  - Plano de RH 
 - 02/12/2021 - 2º Status Report
 - 21/12/2021 - Entrega Final
 

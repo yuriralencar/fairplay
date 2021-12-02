@@ -1,4 +1,4 @@
-# Sistema de Gestão do programa PARTICESPORTE da SEGEL/UFPE
+# Sistema de Gestão do programa PARTICIPESPORTE da SEGEL/UFPE
 
 ### Repositório destinado às entregas relacionadas às disciplinas PGP, GPN e SGE 2021.1.
 

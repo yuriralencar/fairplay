@@ -1,4 +1,4 @@
-# Sistema do programa PARTICESPORTE da Secretaria Gestão da Secretaria de Esporte e Lazer(SEGEL) da UFPE
+# Sistema de Gestão do programa PARTICESPORTE da SEGEL/UFPE
 
 ### Repositório destinado às entregas relacionadas às disciplinas PGP, GPN e SGE 2021.1.
 

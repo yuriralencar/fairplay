@@ -1,0 +1,292 @@
+{
+  "actors": [
+    {
+      "id": "236c494a-dc34-40e9-8aab-993cfdefdc16",
+      "text": "FADE",
+      "type": "istar.Actor",
+      "x": 838,
+      "y": 405,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": []
+    },
+    {
+      "id": "d8be853c-7d0b-40dc-8ef8-1c060591775d",
+      "text": "Usuário ",
+      "type": "istar.Actor",
+      "x": 377,
+      "y": 27,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": []
+    },
+    {
+      "id": "fe7a2598-95a9-4737-8e96-a3f281173e79",
+      "text": "Sistema SEGEL",
+      "type": "istar.Actor",
+      "x": 410,
+      "y": 576,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": []
+    }
+  ],
+  "orphans": [],
+  "dependencies": [
+    {
+      "id": "4ced2505-3ed6-4ed3-a57c-943d954f16c2",
+      "text": "Ser matriculado no Participaesporte",
+      "type": "istar.Goal",
+      "x": 507,
+      "y": 362,
+      "customProperties": {
+        "Description": ""
+      },
+      "source": "d8be853c-7d0b-40dc-8ef8-1c060591775d",
+      "target": "fe7a2598-95a9-4737-8e96-a3f281173e79"
+    },
+    {
+      "id": "fb4d6040-7619-472d-80fd-f8433287f507",
+      "text": "Documentos válidos",
+      "type": "istar.Resource",
+      "x": 634,
+      "y": 448,
+      "customProperties": {
+        "Description": ""
+      },
+      "source": "fe7a2598-95a9-4737-8e96-a3f281173e79",
+      "target": "d8be853c-7d0b-40dc-8ef8-1c060591775d"
+    },
+    {
+      "id": "816dd3ba-1058-447d-bf54-664ce179ba78",
+      "text": "Atestado válido",
+      "type": "istar.Resource",
+      "x": 367,
+      "y": 275,
+      "customProperties": {
+        "Description": ""
+      },
+      "source": "fe7a2598-95a9-4737-8e96-a3f281173e79",
+      "target": "d8be853c-7d0b-40dc-8ef8-1c060591775d"
+    },
+    {
+      "id": "2a95a484-aae4-497e-9648-3028a02a6035",
+      "text": "Realizar pagamento",
+      "type": "istar.Task",
+      "x": 738,
+      "y": 115,
+      "customProperties": {
+        "Description": ""
+      },
+      "source": "d8be853c-7d0b-40dc-8ef8-1c060591775d",
+      "target": "236c494a-dc34-40e9-8aab-993cfdefdc16"
+    },
+    {
+      "id": "4bc1afb4-d15d-4229-bf07-c41ddd99d422",
+      "text": "Comprovante de pagamento",
+      "type": "istar.Resource",
+      "x": 650,
+      "y": 254,
+      "customProperties": {
+        "Description": ""
+      },
+      "source": "d8be853c-7d0b-40dc-8ef8-1c060591775d",
+      "target": "236c494a-dc34-40e9-8aab-993cfdefdc16"
+    },
+    {
+      "id": "1c1b0ddb-50d7-439e-bb84-bbb29e0fe053",
+      "text": "Enviar comprovante de pagamento",
+      "type": "istar.Task",
+      "x": 663,
+      "y": 551,
+      "customProperties": {
+        "Description": ""
+      },
+      "source": "fe7a2598-95a9-4737-8e96-a3f281173e79",
+      "target": "236c494a-dc34-40e9-8aab-993cfdefdc16"
+    },
+    {
+      "id": "b4088735-18c8-4c08-9125-b7e251704890",
+      "text": "Programa bem sucedido ",
+      "type": "istar.Quality",
+      "x": 171,
+      "y": 256,
+      "customProperties": {
+        "Description": ""
+      },
+      "source": "fe7a2598-95a9-4737-8e96-a3f281173e79",
+      "target": "d8be853c-7d0b-40dc-8ef8-1c060591775d"
+    }
+  ],
+  "links": [
+    {
+      "id": "bfcc7758-caa9-4e64-a3ab-8dcd22c2dc1f",
+      "type": "istar.DependencyLink",
+      "source": "b4088735-18c8-4c08-9125-b7e251704890",
+      "target": "d8be853c-7d0b-40dc-8ef8-1c060591775d"
+    },
+    {
+      "id": "6d044ac6-cb48-4377-8c1f-dca790b81f44",
+      "type": "istar.DependencyLink",
+      "source": "fe7a2598-95a9-4737-8e96-a3f281173e79",
+      "target": "b4088735-18c8-4c08-9125-b7e251704890"
+    },
+    {
+      "id": "8544e8a5-45aa-436a-a308-e1ffc5f2c54d",
+      "type": "istar.DependencyLink",
+      "source": "1c1b0ddb-50d7-439e-bb84-bbb29e0fe053",
+      "target": "236c494a-dc34-40e9-8aab-993cfdefdc16"
+    },
+    {
+      "id": "0e1e198c-80ae-474d-9a59-d71810625bc1",
+      "type": "istar.DependencyLink",
+      "source": "fe7a2598-95a9-4737-8e96-a3f281173e79",
+      "target": "1c1b0ddb-50d7-439e-bb84-bbb29e0fe053"
+    },
+    {
+      "id": "6ad2034b-3cf4-45a6-93ae-03404a6b079b",
+      "type": "istar.DependencyLink",
+      "source": "4bc1afb4-d15d-4229-bf07-c41ddd99d422",
+      "target": "236c494a-dc34-40e9-8aab-993cfdefdc16"
+    },
+    {
+      "id": "321b48d5-f786-4410-9421-431f57743c7b",
+      "type": "istar.DependencyLink",
+      "source": "d8be853c-7d0b-40dc-8ef8-1c060591775d",
+      "target": "4bc1afb4-d15d-4229-bf07-c41ddd99d422"
+    },
+    {
+      "id": "6e7b266e-c6a0-45f8-b5d5-392f76285238",
+      "type": "istar.DependencyLink",
+      "source": "2a95a484-aae4-497e-9648-3028a02a6035",
+      "target": "236c494a-dc34-40e9-8aab-993cfdefdc16"
+    },
+    {
+      "id": "2449f605-b6f7-4ed3-bac0-14b7fd07fe1b",
+      "type": "istar.DependencyLink",
+      "source": "d8be853c-7d0b-40dc-8ef8-1c060591775d",
+      "target": "2a95a484-aae4-497e-9648-3028a02a6035"
+    },
+    {
+      "id": "0342a20f-c875-445a-8e90-7c498252e4df",
+      "type": "istar.DependencyLink",
+      "source": "816dd3ba-1058-447d-bf54-664ce179ba78",
+      "target": "d8be853c-7d0b-40dc-8ef8-1c060591775d"
+    },
+    {
+      "id": "982da461-7887-4214-ba31-90d12b9cf5a8",
+      "type": "istar.DependencyLink",
+      "source": "fe7a2598-95a9-4737-8e96-a3f281173e79",
+      "target": "816dd3ba-1058-447d-bf54-664ce179ba78"
+    },
+    {
+      "id": "82a5ac2e-8a4a-46a4-b1ec-a1bbf5fd0227",
+      "type": "istar.DependencyLink",
+      "source": "fb4d6040-7619-472d-80fd-f8433287f507",
+      "target": "d8be853c-7d0b-40dc-8ef8-1c060591775d"
+    },
+    {
+      "id": "685205fa-0f2b-4d83-96bd-7afd886a97b3",
+      "type": "istar.DependencyLink",
+      "source": "fe7a2598-95a9-4737-8e96-a3f281173e79",
+      "target": "fb4d6040-7619-472d-80fd-f8433287f507"
+    },
+    {
+      "id": "aec0bd6e-a83e-4554-89b2-e60f26a73bf5",
+      "type": "istar.DependencyLink",
+      "source": "4ced2505-3ed6-4ed3-a57c-943d954f16c2",
+      "target": "fe7a2598-95a9-4737-8e96-a3f281173e79"
+    },
+    {
+      "id": "ac8af3cf-ad1e-445a-90af-f15fb8670845",
+      "type": "istar.DependencyLink",
+      "source": "d8be853c-7d0b-40dc-8ef8-1c060591775d",
+      "target": "4ced2505-3ed6-4ed3-a57c-943d954f16c2"
+    }
+  ],
+  "display": {
+    "4ced2505-3ed6-4ed3-a57c-943d954f16c2": {
+      "width": 117,
+      "height": 65.34375
+    },
+    "1c1b0ddb-50d7-439e-bb84-bbb29e0fe053": {
+      "width": 107,
+      "height": 49.34375
+    },
+    "321b48d5-f786-4410-9421-431f57743c7b": {
+      "vertices": [
+        {
+          "x": 510,
+          "y": 128
+        }
+      ]
+    },
+    "982da461-7887-4214-ba31-90d12b9cf5a8": {
+      "vertices": [
+        {
+          "x": 416,
+          "y": 488
+        },
+        {
+          "x": 416,
+          "y": 486
+        },
+        {
+          "x": 417,
+          "y": 467
+        },
+        {
+          "x": 418,
+          "y": 455
+        },
+        {
+          "x": 415.83,
+          "y": 420
+        }
+      ]
+    },
+    "aec0bd6e-a83e-4554-89b2-e60f26a73bf5": {
+      "vertices": [
+        {
+          "x": 525,
+          "y": 390
+        },
+        {
+          "x": 520,
+          "y": 407
+        },
+        {
+          "x": 517,
+          "y": 415
+        },
+        {
+          "x": 507,
+          "y": 438
+        }
+      ]
+    },
+    "236c494a-dc34-40e9-8aab-993cfdefdc16": {
+      "collapsed": true
+    },
+    "d8be853c-7d0b-40dc-8ef8-1c060591775d": {
+      "collapsed": true
+    },
+    "fe7a2598-95a9-4737-8e96-a3f281173e79": {
+      "collapsed": true
+    }
+  },
+  "tool": "pistar.2.1.0",
+  "istar": "2.0",
+  "saveDate": "Thu, 02 Dec 2021 20:59:09 GMT",
+  "diagram": {
+    "width": 1214,
+    "height": 870,
+    "customProperties": {
+      "Description": "",
+      "Secretaria": ""
+    }
+  }
+}
